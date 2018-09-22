@@ -1,0 +1,11 @@
+formularios_homepage:
+    path:     /
+    defaults: { _controller: FormulariosBundle:Formulario:index }
+    
+formularios_nuevo:
+    path:     /nuevo
+    defaults: { _controller: FormulariosBundle:Formulario:nuevo }
+    
+formularios_crear:
+    path:     /crear
+    defaults: { _controller: FormulariosBundle:Formulario:crear }

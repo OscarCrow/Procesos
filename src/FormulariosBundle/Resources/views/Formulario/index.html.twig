@@ -1,0 +1,44 @@
+{% extends "@Formularios/layout.html.twig" %}
+
+{% block title %}Lista Presupuestros{% endblock title %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock stylesheets %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="display-4 titulobalnaco ml-md-2">Presupuestos</h1>        
+        <div class="row mt-3">
+            <div class="col-md-12"><a href="{{ path('formularios_nuevo')}}" class="btn btn-secondary float-right">Nuevo</a></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Fecha creación</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">Presupuesto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block javascripts %}
+    {{ parent() }}    
+{% endblock javascripts %}

@@ -1,0 +1,48 @@
+{% extends "@Formularios/layout.html.twig" %}
+
+{% block title %}Nuevo{% endblock title %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock stylesheets %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="display-4 titulobalnaco ml-md-2">Nuevo</h1>        
+        <div class="row mt-3 mb-3">
+            <div class="col-12"><a href="{{ path('formularios_homepage')}}" class="btn btn-secondary float-right">Regresar</a></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="{{ path('formularios_crear') }}" method="post">
+                    <div class="form-group">
+                        <label for="numeroproceso">Numero proceso</label>
+                        <input type="text" class="form-control" id="numeroproceso" name="numeroproceso" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="sede">Sede</label>
+                        <select class="form-control" id="sede" name="sede">
+                            <option value="">Seleccionar</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="México">México</option>
+                            <option value="Peru">Peru</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto</label>
+                        <input type="text" class="form-control" id="presupuesto" name="presupuesto">
+                    </div>
+                    <button type="submit" class="btn btn-success">Terminar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block javascripts %}
+    {{ parent() }}    
+{% endblock javascripts %}

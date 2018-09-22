@@ -1,0 +1,4 @@
+services:
+#    formularios.example:
+#        class: FormulariosBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
