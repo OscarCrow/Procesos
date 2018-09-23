@@ -21,7 +21,7 @@ class FormularioController extends Controller {
     public function nuevoAction() {
         $em = $this->getDoctrine()->getManager();
 
-        $anterior = $em->getRepository('FormulariosBundle:PcFormulario')->ultimoConsecutivo();        
+        $anterior = $em->getRepository('FormulariosBundle:PcFormulario')->ultimoConsecutivo();
         $numero = $this->crearConsecutivo($anterior);
 
         return $this->render('@Formularios/Formulario/nuevo.html.twig', array(
