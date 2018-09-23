@@ -9,3 +9,11 @@ formularios_nuevo:
 formularios_crear:
     path:     /crear
     defaults: { _controller: FormulariosBundle:Formulario:crear }
+    
+formularios_editar:
+    path:     /editar/{id}
+    defaults: { _controller: FormulariosBundle:Formulario:editar }
+    
+formularios_actualizar:
+    path:     /actualizar/{id}
+    defaults: { _controller: FormulariosBundle:Formulario:actualizar }
